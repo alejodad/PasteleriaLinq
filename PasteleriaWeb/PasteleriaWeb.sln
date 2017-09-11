@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PasteleriaWeb", "PasteleriaWeb\PasteleriaWeb.csproj", "{EB1C5350-E90E-400F-8A23-C13B27D04B8F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAO", "DAO\DAO.csproj", "{0646EC5E-12CA-4935-B6AD-2BBDDC996743}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTO", "DTO\DTO.csproj", "{A99E94DD-D957-446B-975B-0510E95B8D90}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EB1C5350-E90E-400F-8A23-C13B27D04B8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB1C5350-E90E-400F-8A23-C13B27D04B8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB1C5350-E90E-400F-8A23-C13B27D04B8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB1C5350-E90E-400F-8A23-C13B27D04B8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0646EC5E-12CA-4935-B6AD-2BBDDC996743}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0646EC5E-12CA-4935-B6AD-2BBDDC996743}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0646EC5E-12CA-4935-B6AD-2BBDDC996743}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0646EC5E-12CA-4935-B6AD-2BBDDC996743}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A99E94DD-D957-446B-975B-0510E95B8D90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A99E94DD-D957-446B-975B-0510E95B8D90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A99E94DD-D957-446B-975B-0510E95B8D90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A99E94DD-D957-446B-975B-0510E95B8D90}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,5 @@
+C:\Users\YhoanGaleano\Documents\Visual Studio 2015\Projects\PasteleriaWeb\DTO\bin\Debug\DTO.dll
+C:\Users\YhoanGaleano\Documents\Visual Studio 2015\Projects\PasteleriaWeb\DTO\bin\Debug\DTO.pdb
+C:\Users\YhoanGaleano\Documents\Visual Studio 2015\Projects\PasteleriaWeb\DTO\obj\Debug\DTO.csprojResolveAssemblyReference.cache
+C:\Users\YhoanGaleano\Documents\Visual Studio 2015\Projects\PasteleriaWeb\DTO\obj\Debug\DTO.dll
+C:\Users\YhoanGaleano\Documents\Visual Studio 2015\Projects\PasteleriaWeb\DTO\obj\Debug\DTO.pdb

@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="PasteleriaDB" Class="PasteleriaDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=DESKTOP-BEQHCIU;Initial Catalog=PasteleriaDB;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="PasteleriaDBConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Ingrediente" Member="Ingrediente">
+    <Type Name="Ingrediente">
+      <Column Name="idIngrediente" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="nombreIngrediente" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="cantidadExistente" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="precioIngrediente" Type="System.Decimal" DbType="Decimal(8,2) NOT NULL" CanBeNull="false" />
+      <Column Name="estado" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="Ingrediente_IngredientePastel" Member="IngredientePastel" ThisKey="idIngrediente" OtherKey="idIngrediente" Type="IngredientePastel" />
+    </Type>
+  </Table>
+  <Table Name="dbo.IngredientePastel" Member="IngredientePastel">
+    <Type Name="IngredientePastel">
+      <Column Name="idIngredientePastel" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="idPastel" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="idIngrediente" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="cantidad" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="precioIngrediente" Type="System.Decimal" DbType="Decimal(8,2) NOT NULL" CanBeNull="false" />
+      <Association Name="Ingrediente_IngredientePastel" Member="Ingrediente" ThisKey="idIngrediente" OtherKey="idIngrediente" Type="Ingrediente" IsForeignKey="true" />
+      <Association Name="Pastel_IngredientePastel" Member="Pastel" ThisKey="idPastel" OtherKey="idPastel" Type="Pastel" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Pastel" Member="Pastel">
+    <Type Name="Pastel">
+      <Column Name="idPastel" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="nombrePastel" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="tamanio" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="estado" AutoSync="OnInsert" Type="System.Boolean" DbType="Bit" IsDbGenerated="true" CanBeNull="true" />
+      <Association Name="Pastel_IngredientePastel" Member="IngredientePastel" ThisKey="idPastel" OtherKey="idPastel" Type="IngredientePastel" />
+    </Type>
+  </Table>
+</Database>

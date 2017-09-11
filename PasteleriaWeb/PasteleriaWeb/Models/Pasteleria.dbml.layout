@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="Pasteleria">
+  <DataContextMoniker Name="/PasteleriaDataContext" />
+  <nestedChildShapes>
+    <classShape Id="5928a0b4-de7c-4451-9202-6e706bc9d1b4" absoluteBounds="0.75, 3.875, 2, 1.7708968098958327">
+      <DataClassMoniker Name="/PasteleriaDataContext/Ingrediente" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b192e30a-b822-416b-bf73-bfa4ab0c3a24" absoluteBounds="0.765, 4.335, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a7dbec31-d06d-4b9a-9d04-cbfc2c6bb387" absoluteBounds="3.5, 0.875, 2, 1.7708968098958329">
+      <DataClassMoniker Name="/PasteleriaDataContext/IngredientePastel" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e24d84c6-79c5-45f3-b519-b552250048ce" absoluteBounds="3.515, 1.335, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e61ea9e1-5a48-4203-ba7b-a41c78362809" absoluteBounds="0.75, 1, 2, 1.5785953776041664">
+      <DataClassMoniker Name="/PasteleriaDataContext/Pastel" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d9d59dd1-c167-49ee-9d1d-a46ea615b7a8" absoluteBounds="0.765, 1.46, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 4.76044840494792); (4.5 : 4.76044840494792); (4.5 : 2.64589680989583)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/PasteleriaDataContext/Ingrediente/Ingrediente_IngredientePastel" />
+      <nodes>
+        <classShapeMoniker Id="5928a0b4-de7c-4451-9202-6e706bc9d1b4" />
+        <classShapeMoniker Id="a7dbec31-d06d-4b9a-9d04-cbfc2c6bb387" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 1.78929768880208); (3.5 : 1.78929768880208)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/PasteleriaDataContext/Pastel/Pastel_IngredientePastel" />
+      <nodes>
+        <classShapeMoniker Id="e61ea9e1-5a48-4203-ba7b-a41c78362809" />
+        <classShapeMoniker Id="a7dbec31-d06d-4b9a-9d04-cbfc2c6bb387" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
